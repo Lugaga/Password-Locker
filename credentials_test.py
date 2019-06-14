@@ -15,3 +15,9 @@ class TestCredentials(TestCase):
         Method that runs before the test cases.
         """
         self.new_cred = Credentials('github','Lugaga', 'tangodown!')
+    def tearDown(self):
+        """
+        Method that does clean up after each test has run.
+        """
+        Credentials.cred_list = []
+        
