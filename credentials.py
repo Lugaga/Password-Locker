@@ -29,3 +29,10 @@ class Credentials:
         Method that returns the cred_list list
         """
         return cls.cred_list
+
+    @classmethod
+    def copy_cred(cls, username):
+        """
+        Method that copies credentials to clipboard.
+        """
+        pyperclip.copy(username)
