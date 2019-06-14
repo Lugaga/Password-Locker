@@ -26,7 +26,7 @@ class TestCredentials(TestCase):
         """
         self.assertEqual(self.new_cred.account_name, 'github')
         self.assertEqual(self.new_cred.username, 'Lugaga')
-        self.assertEqual(self.new_cred.password, 'tangodown')
+        self.assertEqual(self.new_cred.password, 'tangodown!')
 
     def test_store_existing_cred(self):
         """
