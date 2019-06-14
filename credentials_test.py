@@ -20,4 +20,19 @@ class TestCredentials(TestCase):
         Method that does clean up after each test has run.
         """
         Credentials.cred_list = []
+    def test_init(self):
+        """
+        Test case to see if the objects are being initialized properly.
+        """
+        self.assertEqual(self.new_cred.account_name, 'github')
+        self.assertEqual(self.new_cred.username, 'Lugaga')
+        self.assertEqual(self.new_cred.password, 'tangodown')
+
+    def test_store_existing_cred(self):
+        """
+        Test case to check whether credentials can be stored in cred_list.
+        """
+        self.new_cred.save_cred()
+        self.assertEqual(len(Credentials.cred_list), 1)
+        
         
