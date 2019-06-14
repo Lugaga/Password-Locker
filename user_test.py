@@ -1,13 +1,13 @@
-from unittest import TestCase
+from unittest import TestCase, main
 from user import User
 
 
 class TestUser(TestCase):
     """
-      Defines test cases for the user class behaviours.
+    Defines test cases for the user class behaviours.
 
-      Args:
-        TestCase: A class that helps create the test cases.
+    Args:
+    TestCase: A class that helps create the test cases.
     """
 
     def setUp(self):
@@ -23,7 +23,7 @@ class TestUser(TestCase):
         self.assertEqual(self.new_user.first_name, 'Lugaga')
         self.assertEqual(self.new_user.last_name, 'Maurice')
         self.assertEqual(self.new_user.username, 'Lugaga')
-        self.assertEqual(self.new_user.password, 'TangoDown!')
+        self.assertEqual(self.new_user.password, 'Tangodown!')
 
     def test_save_user(self):
         """
@@ -37,7 +37,8 @@ class TestUser(TestCase):
         Test case to see if a specified user exists.
         """
         self.new_user.save_user()
-        self.assertTrue(User.user_exists('Lugaga')
+        self.assertTrue(User.user_exists('Lugaga'))
+
 
 if __name__ == '__main__':
     main()
