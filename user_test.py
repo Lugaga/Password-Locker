@@ -32,8 +32,12 @@ class TestUser(TestCase):
         self.new_user.save_user()
         self.assertEqual(len(User.user_list), 1)
 
-   
-
+    def test_user_exists(self):
+        """
+        Test case to see if a specified user exists.
+        """
+        self.new_user.save_user()
+        self.assertTrue(User.user_exists('Lugaga')
 
 if __name__ == '__main__':
     main()
