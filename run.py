@@ -11,5 +11,12 @@ def register_user(f_name, l_name, u_name, password):
     """
     new_user = User(f_name, l_name, u_name, password)
     new_user.save_user()
+
+def save_credentials(cred):
+    """
+        Method that stores existing credentials
+    """
+    Credentials.cred_list.append(cred)
+
     
 
