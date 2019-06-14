@@ -26,3 +26,11 @@ def save_user(self):
     Method that saves objects to user_list.
     """
     self.user_list.append(self)
+
+
+@classmethod
+def user_exists(cls, logged_user):
+    """
+    A Method that checks if the user exists or not
+    """
+    
