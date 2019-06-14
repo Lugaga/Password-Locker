@@ -24,5 +24,15 @@ def display_credentials():
     """
     return Credentials.cred_list
 
+def generate_password(length):
+    """
+        Method that generates passwords.
+    """
+    chars = 'abcdefghijklmnopqrstuvwxyz1234567890'
+    password = ''
+    for c in range(length):
+        password += random.choice(chars)
+    return password
+
     
 
