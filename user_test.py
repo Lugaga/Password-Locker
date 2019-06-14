@@ -25,5 +25,15 @@ class TestUser(TestCase):
         self.assertEqual(self.new_user.username, 'Lugaga')
         self.assertEqual(self.new_user.password, 'TangoDown!')
 
+    def test_save_user(self):
+        """
+        Test case to see if objects are being stored on user_list.
+        """
+        self.new_user.save_user()
+        self.assertEqual(len(User.user_list), 1)
+
+   
+
+
 if __name__ == '__main__':
     main()
