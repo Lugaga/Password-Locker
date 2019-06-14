@@ -17,6 +17,12 @@ def save_credentials(cred):
         Method that stores existing credentials
     """
     Credentials.cred_list.append(cred)
+    
+def display_credentials():
+    """
+        Method that displays all credentials
+    """
+    return Credentials.cred_list
 
     
 
