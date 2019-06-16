@@ -12,3 +12,10 @@
 | Display credentials accounts | display | Returned created accounts list |
 | Log Out | log out | Log Out was successful ....... |
 | Exit | exit | See you again Amigo!! ....... |
+
+## Setup Instructions.
+* Open your browser browser.
+* Load gitHub on your browser.
+* Search for Lugaga/Password-Locker.
+* Clone the repository.
+* Run `./run.py` on your terminal.
