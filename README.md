@@ -27,3 +27,7 @@
 ## Support
 Telephone: +254 (0) 777 685 128
 Email: maureezgaga@gmail.com
+
+### License and Copyright Details
+The MIT License (MIT)
+Copyright (c) 2019**Engineer Lugaga**
