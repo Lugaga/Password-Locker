@@ -19,3 +19,7 @@
 * Search for Lugaga/Password-Locker.
 * Clone the repository.
 * Run `./run.py` on your terminal.
+
+## Technologies Used
+* Python3.6.
+* Markdown.
